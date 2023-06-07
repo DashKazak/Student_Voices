@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
     <title>Student Voices</title>
 </head>
 <body>
-    <header>
-        <a href = "#"><img>
-        <h1>Student Voices</h1>
-        </a>
-        <nav>
-            <ul>
-                <a href = "about.html"><li>About</li></a>
-                <a href = "videos.html"><li>Videos</li></a>
-                <a href = "makers.html"><li>Makers</li></a>
-            </ul>
-        </nav>
+    <header class="top_navigation">
+        <div class="container">
+            <div class="banner">
+                <div class = "logo">
+                    <img class="sv_logo" src="assets/logo.png">
+                </div>
+                <div>
+                    <h1>Student Voices</h1>
+                </div>
+            </div>
+            
+            <nav class="primary_nav_wrap">
+                <ul class="main_menu">
+                    <li>About<a href = "about.html"></a></li>
+                    <li>Videos<a href ="videos.html"></a></li>
+                    <li>Makers<a href = "makers.html"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article>
+        <section>
             <dl>
                 <dt>Student Voices</dt>
                 <dd> Meaning of the project and its mission.</dd>
@@ -30,16 +39,18 @@
             </dl>
             <section>
                 <div>
-                    <p>Name os the video: Number of the video</p>
+                    <!--video-->
                 </div>
             </section>
-        </article>
-        <sidebar></sidebar>
+            <sidebar>
+                <p>text about the video</p>
+            </sidebar>
+        </section>
 
     </main>
 
     <footer>
-        <img src = "assets/logo.png">
+        <!--<img src = "assets/logo.png" alt ="Student Voices Logo">-->
         <p>Student Voices <br>
         studentvoices@minneapolis.edu</p>
         <p>Website made by Daria Kazak. Copyright notice<br>
