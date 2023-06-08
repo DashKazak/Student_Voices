@@ -6,59 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
     <title>Student Voices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="top_navigation">
-        <div class="container">
-            <div class="banner">
-                <div class = "logo">
-                    <img class="sv_logo" src="assets/logo.png">
-                </div>
+    <div id="root">
+        <header class="top_navigation">
+            <span class="container">
+                <span class="banner">
+                    <span class = "logo_header">
+                        <a id = "logo_link" href ="#"><img class="sv_logo" src="assets/logo.png"></a>
+                    </span>
+                    <span class="text_name">
+                        <p href="#">Student Voices</p>
+                    </span>
+                </span>
+                
+                <nav class="primary_nav_wrap">
+                    <ul class="main_menu">
+                        <li><a href = "about.html">About</a></li>
+                        <li><a href ="videos.html">Videos</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </span>
+        </header>
+
+        <main>
+            <section class="landing_page_wrap">
                 <div>
-                    <h1>Student Voices</h1>
+                    <p>
+                        <h3>
+                            Student Voices is an award winning initiative started by students at Minneapolis College. It began as a virtual space for students to share their thoughts and feelings about going to college during the pandemic, and grew from there. Now Student Voices serves as a platform for students to share their experiences at Minneapolis College, offer praise or criticism, provide solutions and explore possibilites. In the past 2 years we interviewed 13 students. 
+                        </h3>
+                    </p>
+                </div>
+                <div class = "landing_main_buttons_wrap">
+                    <ul class="landing_main_buttons_list">
+                        <li><button>Read more about or mission and goals</button></li>
+                        <li><button>Watch the interviews</button></li>
+                    </ul>
+                    
+                </div>
+                <section>
+                    <div>
+                        <video></video>
+                    </div>
+                
+                    <sidebar>
+                        <p>text about the video</p>
+                    </sidebar>
+                </section>
+            </section>
+
+        </main>
+
+        <footer class="footer_whole">
+            <div class="footer_wrap">
+                <div class = "logo_footer">
+                    <img class="sv_logo" src = "assets/logo.png" alt ="Student Voices Logo">
+                </div>
+                <div class="contact">
+                    <p>Student Voices <br>
+                    studentvoices@minneapolis.edu </p>
+                </div>
+                <div class="website_made_by_footer">
+                    <p>Website made by Daria Kazak. Copyright notice<br>
+                    @instagram: madebydaria<br>
+                    @LinkedIn: Daria Kazak</p>
+                </div>
+                <div class="legal">
+                    <p>Site Language: English</p>
+                    <p>ADA policy</p>
                 </div>
             </div>
-            
-            <nav class="primary_nav_wrap">
-                <ul class="main_menu">
-                    <li>About<a href = "about.html"></a></li>
-                    <li>Videos<a href ="videos.html"></a></li>
-                    <li>Makers<a href = "makers.html"></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <dl>
-                <dt>Student Voices</dt>
-                <dd> Meaning of the project and its mission.</dd>
-                <hr>
-                <dd>Accomplishments in the past 2 years </dd>
-            </dl>
-            <section>
-                <div>
-                    <!--video-->
-                </div>
-            </section>
-            <sidebar>
-                <p>text about the video</p>
-            </sidebar>
-        </section>
-
-    </main>
-
-    <footer>
-        <!--<img src = "assets/logo.png" alt ="Student Voices Logo">-->
-        <p>Student Voices <br>
-        studentvoices@minneapolis.edu</p>
-        <p>Website made by Daria Kazak. Copyright notice<br>
-        @instagram: madebydaria<br>
-        @LinkedIn: Daria Kazak</p>
-        <p>Site Language: English</p>
-        <p>ADA policy</p>
-
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

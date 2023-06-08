@@ -2,6 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+#root{
+    margin: 1.5rem;
 }
 .container{
     display: flex;
@@ -25,17 +31,72 @@
 .main_menu{
     display: inline-flex;
     list-style: none;
+    position: absolute;
 }
 
-.main_menu li{
-    margin:15%;
+.text_name{
+    font-size: xx-large;
+}
+.main_menu a{
+    text-decoration: none;
+    color:black;
+    padding:1.5rem;
+    font-weight: 100;
+}
+
+a:active, a:hover{
+    background-color: whitesmoke;
+    border-radius: 15%;
 }
 
 .sv_logo {
     width:100%;
 }
-.logo{
-    width:10%;
+.logo_header{
+    width:6%;
     margin: 20px 10px 20px 40px;
+}
+
+.landing_page_wrap{
+    margin: 1.5rem 5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing_main_buttons_wrap{
+    margin-left:auto;
+}
+
+.landing_main_buttons_list{
+    display: inline-flex;
+    list-style: none;
+}
+
+.landing_main_buttons_list li{
+    padding:0.5rem;
+}
+
+.landing_main_buttons_list li button{
+    padding:0.5rem;
+}
+
+.logo_footer{
+    width:20%;
+    margin: 20px 10px 20px 40px;
+}
+
+.footer_whole{
+    background-color: whitesmoke;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.footer_wrap{
+    display: grid;
+    gap: 7rem;
+    grid-template-areas:
+    "logo  contact  madeby  legal";
+    grid-template-columns:  repeat(4,minmax(0,1fr));
 }
 
